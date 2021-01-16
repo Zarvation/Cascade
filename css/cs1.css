@@ -19,6 +19,23 @@ body {
   justify-content: center;
   position: relative;
 }
+.paragraphtext {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #7e05d7;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
+}
 .container {
   height: 100vh;
   overflow: auto;
