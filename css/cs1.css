@@ -45,6 +45,12 @@ body {
 .page:nth-child(3n) {
   background: #bd04a9;
 }
+.page:nth-child(4n) {
+  background: #7b8f6d;
+}
+.page:nth-child(5n) {
+  background: #20d2f1;
+}
 .page .char {
   display: inline-block;
   -webkit-animation-delay: calc(0.25s + var(--char-index) * 0.1s);
@@ -445,4 +451,82 @@ body {
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing:0.3em;
+}
+
+.ml15 {
+  font-weight: 800;
+  font-size: 1.0em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+
+div.ml8 {
+  font-weight: 900;
+  font-size: 4.5em;
+  color: rgb(245, 3, 3);
+  width: 3em;
+  height: 3em;
+}
+
+.ml8 .letters-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
+
+.ml8 .letters {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 0.7em;
+  right: -0.12em;
+  top: -0.2em;
+}
+
+.ml8 .bang {
+  font-size: 1.0em;
+  top: auto;
+  left: -0.06em;
+  color: white;
+}
+
+.ml8 .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.ml8 .circle-white {
+  width: 4.3em;
+  height: 4.3em;
+  border: 2px dashed white;
+  border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+  width: 4.2em;
+  height: 4.2em;
+  background-color: #010c0f;
+  border-radius: 3em;
+  z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  border: 2px dashed #4f7b86;
+  width: 4.3em;
+  height: 4.3em;
 }
