@@ -7,6 +7,7 @@ body {
   background: #111;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .page {
   height: 100vh;
@@ -44,6 +45,12 @@ body {
 }
 .page:nth-child(3n) {
   background: #bd04a9;
+}
+.page:nth-child(4n) {
+  background: #dfcf77;
+}
+.page:nth-child(5n) {
+  background: #20d2f1;
 }
 .page .char {
   display: inline-block;
@@ -445,4 +452,124 @@ body {
   font-weight: 100;
   text-transform: uppercase;
   letter-spacing:0.3em;
+}
+
+.ml15 {
+  font-weight: 800;
+  font-size: 1.0em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+
+div.ml8 {
+  font-weight: 900;
+  font-size: 1em;
+  color: rgb(245, 3, 3);
+  width: 3em;
+  height: 3em;
+}
+
+.ml8 .letters-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
+
+.ml8 .letters {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  line-height: 0.7em;
+  right: -0.12em;
+  top: -0.2em;
+}
+
+.ml8 .bang {
+  font-size: 0.8em;
+  top: auto;
+  left: -0.06em;
+  color: white;
+}
+
+.ml8 .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.ml8 .circle-white {
+  width: 3em;
+  height: 3em;
+  border: 2px dashed white;
+  border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+  width: 3.2em;
+  height: 3.2em;
+  background-color: #010c0f;
+  border-radius: 3em;
+  z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  border: 8px dashed #4f7b86;
+  width: 3.4em;
+  height: 3.4em;
+}
+
+.ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #402d2d;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #402d2d;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters {
+  display: inline-block;
+  opacity: 0;
 }
