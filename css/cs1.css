@@ -9,6 +9,98 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+.title {
+    font-family:'Century Gothic';
+    color:#c5edff;
+}
+.enter{
+    font-family:'Segoe UI';
+    color:#fff45f;
+}
+.swap{
+    font-family:'Bell MT';
+    color:#b4ffce;
+}
+.flip{
+    font-family:'Felix Titling';
+    color:#004f12;
+}
+.karaoke{
+    font-family:'Copperplate Gothic';
+    color:#000fff;
+}
+.blocks{
+    font-family:'Courier New';
+    color:#ffbad2;
+}
+.folding{
+    font-family:'Imprint MT Shadow';
+    color:#720000;
+}
+.tumbling{
+    font-family:'Gill Sans';
+    color:#090062;
+}
+.zip{
+    font-family:'Times New Roman', Times, serif;
+    color:#ffa200
+}
+.bubble{
+    font-family:Forte;
+    color:#009f67
+}
+.meeting{
+    font-family:'Lucida Bright';
+    color:#cc0000
+}
+.fading{
+    font-family:Castellar;
+    color:#fdb1ff;
+}
+.slide{
+    font-family:'Do Hyeon';
+    color:#96ff8f;
+}
+.spinning{
+    font-family:'Maiandra GD';
+    color:#b5daff;
+}
+.filling{
+    font-family:'Caviar Dreams';
+}
+.scaling{
+    font-family:Bahnschrift;
+    color:#b4ffce;
+}
+.turning{
+    font-family:'Colonna MT';
+    color:#78ffed;
+}
+.bulge{
+    font-family:Verdana;
+    color:#ffc200;
+}
+.rolling{
+    font-family:Tahoma;
+    color:#b5daff;
+}
+.perspective{
+    font-family:Cambria;
+    color:#0700a8;
+}
+.swinging{
+    font-family:'Louis George Café';
+    color:#fffc82;
+}
+.blowing{
+    font-family:'Comic Sans MS';
+    color:#0e6400;
+}
+.conveyor{
+    font-family:'Berlin Sans FB';
+    color:#6b4040;
+
+}
 .page {
   height: 100vh;
   width: 100vw;
@@ -38,19 +130,25 @@ body {
   }
 }
 .page:nth-child(n) {
-  background: #7e05d7;
+  background: #00167c;
 }
 .page:nth-child(2n) {
-  background: #f21e56;
+  background: #00e3ff;
 }
 .page:nth-child(3n) {
-  background: #bd04a9;
+  background: #006120;
 }
 .page:nth-child(4n) {
-  background: #dfcf77;
+  background: #ff9000;
 }
 .page:nth-child(5n) {
-  background: #20d2f1;
+  background: #6f0000;
+}
+.page:nth-child(6n) {
+    background: #af7ada;
+}
+.page:nth-child(7n) {
+    background: #758eff;
 }
 .page .char {
   display: inline-block;
@@ -421,11 +519,12 @@ body {
   }
 }
 
-.ml11 {
+.ml1 {
   font-weight: 700;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.ml11 .text-wrapper {
+.ml1 .text-wrapper {
   position: relative;
   display: inline-block;
   padding-top: 0.1em;
@@ -433,7 +532,7 @@ body {
   padding-bottom: 0.15em;
 }
 
-.ml11 .line {
+.ml1 .line {
   opacity: 0;
   position: absolute;
   left: 0;
@@ -443,30 +542,34 @@ body {
   transform-origin: 0 50%;
 }
 
-.ml11 .line1 { 
+.ml1 .line1 { 
   top: 0; 
   left: 0;
 }
 
-.ml12 .letter {
+.ml2 .letter {
   font-weight: 100;
   text-transform: uppercase;
-  letter-spacing:0.3em;
+  letter-spacing:0.5em;
+  font-family:'Agency FB';
+  color:#0a0190
 }
 
-.ml15 {
+.ml3 {
   font-weight: 800;
   font-size: 1.0em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
 
-.ml15 .word {
+.ml3 .word {
   display: inline-block;
   line-height: 1em;
+  font-family:Impact;
+  font-size:10rem;
 }
 
-div.ml8 {
+div.ml4 {
   font-weight: 900;
   font-size: 1em;
   color: rgb(245, 3, 3);
@@ -474,7 +577,7 @@ div.ml8 {
   height: 3em;
 }
 
-.ml8 .letters-container {
+.ml4 .letters-container {
   position: absolute;
   left: 0;
   right: 0;
@@ -484,7 +587,7 @@ div.ml8 {
   height: 1em;
 }
 
-.ml8 .letters {
+.ml4 .letters {
   position: relative;
   z-index: 2;
   display: inline-block;
@@ -493,14 +596,14 @@ div.ml8 {
   top: -0.2em;
 }
 
-.ml8 .bang {
+.ml4 .bang {
   font-size: 0.8em;
   top: auto;
   left: -0.06em;
   color: white;
 }
 
-.ml8 .circle {
+.ml4 .circle {
   position: absolute;
   left: 0;
   right: 0;
@@ -509,14 +612,14 @@ div.ml8 {
   bottom: 0;
 }
 
-.ml8 .circle-white {
+.ml4 .circle-white {
   width: 3em;
   height: 3em;
   border: 2px dashed white;
   border-radius: 2em;
 }
 
-.ml8 .circle-dark {
+.ml4 .circle-dark {
   width: 3.2em;
   height: 3.2em;
   background-color: #010c0f;
@@ -524,7 +627,7 @@ div.ml8 {
   z-index: 1;
 }
 
-.ml8 .circle-dark-dashed {
+.ml4 .circle-dark-dashed {
   border-radius: 2.4em;
   background-color: transparent;
   border: 8px dashed #4f7b86;
@@ -536,7 +639,7 @@ div.ml8 {
   position: relative;
   font-weight: 300;
   font-size: 1.5em;
-  color: #402d2d;
+  color: #fffba0;
 }
 
 .ml5 .text-wrapper {
@@ -556,7 +659,7 @@ div.ml8 {
   margin: auto;
   height: 3px;
   width: 100%;
-  background-color: #402d2d;
+  background-color: #e28a00;
   transform-origin: 0.5 0;
 }
 
@@ -567,6 +670,7 @@ div.ml8 {
   width: 1em;
   margin-right: -0.1em;
   margin-left: -0.1em;
+  color:#ffe860
 }
 
 .ml5 .letters {
