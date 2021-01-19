@@ -112,6 +112,7 @@ body {
   justify-content: center;
   position: relative;
 }
+
 .container {
   height: 100vh;
   overflow: auto;
