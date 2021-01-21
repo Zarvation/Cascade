@@ -111,6 +111,9 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
 }
 .container {
   height: 100vh;
@@ -118,11 +121,6 @@ body {
   overflow-x: hidden;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
-}
-.page {
-  color: #fff;
-  font-size: 3rem;
-  text-align: center;
 }
 @media (min-width: 768px) {
   .page {
@@ -566,7 +564,7 @@ body {
   display: inline-block;
   line-height: 1em;
   font-family:Impact;
-  font-size:10rem;
+  font-size:7rem;
 }
 
 div.ml4 {
@@ -624,7 +622,6 @@ div.ml4 {
   height: 3.2em;
   background-color: #010c0f;
   border-radius: 3em;
-  z-index: 1;
 }
 
 .ml4 .circle-dark-dashed {
@@ -644,7 +641,6 @@ div.ml4 {
 
 .ml5 .text-wrapper {
   position: relative;
-  display: inline-block;
   padding-top: 0.1em;
   padding-right: 0.05em;
   padding-bottom: 0.15em;
@@ -660,20 +656,11 @@ div.ml4 {
   height: 3px;
   width: 100%;
   background-color: #e28a00;
-  transform-origin: 0.5 0;
 }
 
 .ml5 .ampersand {
   font-family: Baskerville, serif;
   font-style: italic;
   font-weight: 400;
-  width: 1em;
-  margin-right: -0.1em;
-  margin-left: -0.1em;
   color:#ffe860
-}
-
-.ml5 .letters {
-  display: inline-block;
-  opacity: 0;
 }
