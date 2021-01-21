@@ -26,8 +26,8 @@ body {
     color:#004f12;
 }
 .karaoke{
-    font-family:'Copperplate Gothic';
-    color:#000fff;
+    font-family:'Century Gothic';
+    color:goldenrod;
 }
 .blocks{
     font-family:'Courier New';
@@ -112,7 +112,25 @@ body {
   justify-content: center;
   position: relative;
 }
+.page-content {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+}
 
+.page-title {
+  height: 45vh;
+  width: 100%;
+  scroll-snap-align: center;
+  font-size: calc(var(--font-size) * 1px);
+  font-weight: bold;
+  display: flex;
+  position: relative;
+}
 .container {
   height: 100vh;
   overflow: auto;
@@ -120,22 +138,43 @@ body {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
 }
-.page {
+.page, .page-content {
   color: #fff;
   font-size: 3rem;
   text-align: center;
 }
+.paragraphtext {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #7e05d7;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  padding-right: 2em;
+  padding-left: 2em;
+}
 @media (min-width: 768px) {
-  .page {
+  .page, .page-content {
     font-size: 5rem;
   }
 }
-.page:nth-child(n) {
-  background: #00167c;
+
+.page:nth-child(odd), .page-content:nth-child(odd) {
+  background-color: dimgrey;
+  opacity: inherit
 }
-.page:nth-child(2n) {
-  background: #00e3ff;
+.page:nth-child(even), .page-content:nth-child(even) {
+  background-color: dimgrey;
+  opacity: inherit
 }
+/*
 .page:nth-child(3n) {
   background: #006120;
 }
@@ -151,7 +190,8 @@ body {
 .page:nth-child(7n) {
     background: #758eff;
 }
-.page .char {
+*/
+.page .char, .page-content .char {
   display: inline-block;
   -webkit-animation-delay: calc(0.25s + var(--char-index) * 0.1s);
           animation-delay: calc(0.25s + var(--char-index) * 0.1s);
