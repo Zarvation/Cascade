@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh ScrollOut.js</title>
+    <link rel="stylesheet" href="ScrollOut.css">
+</head>
+<body>
+    <div >
+        <h1>Abstract Algorithm</h1>
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a tenetur saepe laudantium architecto neque id ipsam quia impedit quos incidunt rerum, sint maxime eos in, odio commodi quam similique.</span>
+    </div>
+    <!--Contoh 1-->
+    <div >
+        <h1 >Ini  contoh 1</h1>
+        <span > 
+            Pada tahap ini ScrollOut akan dijalankan pada elemen "p" 
+            dikarenakan fungsi data-scroll di masukan kedalamnya 
+        </span>
+        <p data-scroll>
+            iniContoh iniContoh iniContoh iniContoh iniContoh 
+            iniContoh iniContoh iniContoh iniContoh iniContoh 
+            iniContoh iniContoh iniContoh iniContoh iniContoh 
+        </p>
+    </div>
+    <!--contoh 2-->
+    <div data-scroll>
+        <h1>Ini contoh 2</h1>
+        <span>
+            pada tahap ini data-scroll di masukan pada container 
+            "div" sehingga 1 container div akan menjalankan animasi 
+            Scroll out 
+        </span>
+    </div>
+    <!--Lain lain-->
+    <div>
+        <h1 data-scroll>Ellen 181110549</h1>
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a tenetur saepe laudantium architecto neque id ipsam quia impedit quos incidunt rerum, sint maxime eos in, odio commodi quam similique.</span>
+    </div>
+    <div>
+        <h1 data-scroll>Eddrick 181110905</h1>
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a tenetur saepe laudantium architecto neque id ipsam quia impedit quos incidunt rerum, sint maxime eos in, odio commodi quam similique.</span>
+    </div>
+    <div > 
+        <h1 data-scroll>Frank Winatra 181112221</h1>
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui a tenetur saepe laudantium architecto neque id ipsam quia impedit quos incidunt rerum, sint maxime eos in, odio commodi quam similique.</span>
+    </div>
+    
+    
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+            once:true,
+            /*ScrollOut terjadi hanya sekali*/
+
+            threshold:.5 
+            /*ScrollOut akan mulai berjalan ketika telah di scroll 
+            sebanyak 50% dari elemen yang kita beri datas-croll*/
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    min-height:  100vh;
+    background-color: rgb(80, 59, 59);
+}
+
+
+.wave{
+    font-size: 3em;
+    color: thistle;
+}
+.wave .char{
+    animation: animate 4s ease-in-out infinite;
+    transform: translateY(-3em);
+    animation-delay: calc(0.1s * var(--char-index));
+}
+@keyframes animate {
+    0%,100%{
+        transform: translateY(-3em)rotate(-30deg);
+    }
+    50%{
+        transform:translateY(3em)rotate(30deg);
+    }
+}
